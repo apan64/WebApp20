@@ -5,7 +5,6 @@ var purchaseSchema = mongoose.Schema({
     item_name: String,
     link: String,
     price: String,
-    date: Date,
     status: String,
     count: Number,
     urgency: String,

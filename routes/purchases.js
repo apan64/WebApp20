@@ -11,7 +11,6 @@ purchase.post('/newpurchase', authHelper.isLoggedIn, function(req, res) {
 	p.item_name = req.body.item_name;
 	p.link = req.body.link;
 	p.price = req.body.price;
-	p.date = req.body.date;
 	p.status = req.body.status;
 	p.count = req.body.count;
 	p.urgency = req.body.urgency;

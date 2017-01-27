@@ -1,0 +1,36 @@
+models/purchase.js /done for now
+routes/purchase.js /kinda done i think?
+public/pages/purchase.html /done for now
+public/javascripts/purchase/purchase.js /done for now
+add routes to app.js /think i did it?
+import new angular controller to index.html in public/something /pretty sure i did it right
+
+all done
+for authhelper, send status 401 if not authenticated, redirect from receiving error
+add authorization for finance people in userModel to view purchase requests
+add an urgency parameter to the site/model (emergency, high, medium, low, more than a month)
+
+done again
+
+
+use email helper sawyer made: done
+
+google sheets
+
+client id: 683916764011-s3jbm7km9uv5evqqcpfhuo2c1srpthqf.apps.googleusercontent.com 
+secret key: T3NYkIP5LGgMsFALl0kmOoy7 
+var purchaseSheetKey = '1HFk8TaGWq5j9mouKGJYQeD0Xb9KxvWiXvtfs8_091A8';
+ignore keys above
+
+need to determine how to load gapi into spreadsheetHelper.js, require?
+ask sawyer if it's possible to load gapi from a url directly into javascript instead of having to go through html
+otherwise, ask plausibility for passing gapi through the html script load, to a wrapper function that passes it eventually into spreadsheethelper.js
+
+scratch last two, but error with 'window' in the googleAPI.js file downloaded
+attempted npm install of gapi that needed coffeescript dependency, but apparently require('gapi') (that's what they said to use on the website) returns an undefined object somehow
+
+
+
+later:
+consider error output in the event of mismatched types(date, int) (error code 500? pretty sure)
+probably get rid of that date shit and automatically call date to store upon request submission
